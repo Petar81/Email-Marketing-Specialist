@@ -19,6 +19,11 @@
 body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  height: 100%;
+  background-color: #333;
+  background-image:url(images/nyc-transparent.png);
+  background-size:cover;
+  background-position:center center;
 }
 
 .cover-container {
