@@ -22,8 +22,9 @@ body {
   height: 100%;
   background-color: #333;
   background-image:url(../images/nyc-transparent.png);
-  background-size:cover;
+  background-size: cover;
   background-position:center center;
+  background-attachment: fixed;
 }
 
 .cover-container {
