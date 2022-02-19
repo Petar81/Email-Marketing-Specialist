@@ -3,7 +3,7 @@
   'use strict'
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+  var forms = document.querySelectorAll('.needs-validation');
 
   // Loop over them and prevent submission
   Array.prototype.slice.call(forms)
@@ -16,5 +16,19 @@
 
         form.classList.add('was-validated')
       }, false)
-    })
+    });
+
+    var firstName = document.getElementById('firstName');
+    var lastName = document.getElementById('lastName');
+    var cardFirstName = document.getElementById('cardFirstName');
+    var cardLastName = document.getElementById('cardLastName');
+
+    firstName.addEventListener('input', function (event) {
+      cardFirstName.innerHTML = firstName.value + ' ';
+    });
+
+    lastName.addEventListener('input', function (event) {
+      cardLastName.innerHTML = lastName.value;
+    });
+
 })()
