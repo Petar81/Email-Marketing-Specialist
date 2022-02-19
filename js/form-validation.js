@@ -38,4 +38,11 @@
       cardCompany.innerHTML = company.value;
     });
 
+    var email = document.getElementById('email');
+    var cardEmail = document.getElementById('cardEmail');
+
+    email.addEventListener('input', function (event) {
+      cardEmail.innerHTML = email.value;
+    });
+
 })()
