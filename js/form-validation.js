@@ -31,4 +31,11 @@
       cardLastName.innerHTML = lastName.value;
     });
 
+    var company = document.getElementById('company');
+    var cardCompany = document.getElementById('cardCompany');
+
+    company.addEventListener('input', function (event) {
+      cardCompany.innerHTML = company.value;
+    });
+
 })()
