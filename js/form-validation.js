@@ -52,4 +52,38 @@
       cardPhone.innerHTML = phone.value;
     });
 
+    var address = document.getElementById('address');
+    var cardStreet = document.getElementById('cardStreet');
+
+    address.addEventListener('input', function (event) {
+      cardStreet.innerHTML = address.value;
+    });
+    address.addEventListener('change', function (event) {
+      cardStreet.innerHTML = address.value + ', ';
+    });
+
+    var state = document.getElementById('state');
+    var cardState = document.getElementById('cardState');
+
+    state.addEventListener('change', function (event) {
+      cardState.innerHTML = state.value + ', ';
+    });
+
+    var zip = document.getElementById('zip');
+    var cardZIP = document.getElementById('cardZIP');
+
+    zip.addEventListener('input', function (event) {
+      cardZIP.innerHTML = zip.value;
+    });
+    zip.addEventListener('change', function (event) {
+      cardZIP.innerHTML = zip.value + ', ';
+    });
+
+    var country = document.getElementById('country');
+    var cardCountry = document.getElementById('cardCountry');
+
+    country.addEventListener('change', function (event) {
+      cardCountry.innerHTML = country.value;
+    });
+
 })()
