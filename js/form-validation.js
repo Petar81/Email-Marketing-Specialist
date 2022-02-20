@@ -59,6 +59,9 @@
       cardStreet.innerHTML = address.value;
     });
     address.addEventListener('change', function (event) {
+      if(address.value === ''){
+        return cardStreet.innerHTML = '';
+      }
       cardStreet.innerHTML = address.value + ', ';
     });
 
@@ -66,7 +69,7 @@
     var cardState = document.getElementById('cardState');
 
     state.addEventListener('change', function (event) {
-      if(state.value === ''){
+      if(state.value === 'none'){
         return cardState.innerHTML = '';
       }
       cardState.innerHTML = state.value + ', ';
@@ -79,6 +82,9 @@
       cardZIP.innerHTML = zip.value;
     });
     zip.addEventListener('change', function (event) {
+      if(zip.value === ''){
+        return cardZIP.innerHTML = '';
+      }
       cardZIP.innerHTML = zip.value + ', ';
     });
 
@@ -86,6 +92,9 @@
     var cardCountry = document.getElementById('cardCountry');
 
     country.addEventListener('change', function (event) {
+      if(country.value === 'none'){
+        return cardCountry.innerHTML = '';
+      }
       cardCountry.innerHTML = country.value;
     });
 
