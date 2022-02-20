@@ -73,6 +73,7 @@
         return cardState.innerHTML = '';
       }
       cardState.innerHTML = state.value + ', ';
+      // console.log(state.value);
     });
 
     var zip = document.getElementById('zip');
@@ -100,6 +101,7 @@
         state.removeAttribute('disabled');
         state.value = 'AL';
         cardState.innerHTML = 'AL, ';
+        // console.log(state.value);
       }
       cardCountry.innerHTML = country.value;
     });
