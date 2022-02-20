@@ -66,6 +66,9 @@
     var cardState = document.getElementById('cardState');
 
     state.addEventListener('change', function (event) {
+      if(state.value === ''){
+        return cardState.innerHTML = '';
+      }
       cardState.innerHTML = state.value + ', ';
     });
 
