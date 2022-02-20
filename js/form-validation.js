@@ -45,4 +45,11 @@
       cardEmail.innerHTML = email.value;
     });
 
+    var phone = document.getElementById('phone');
+    var cardPhone = document.getElementById('cardPhone');
+
+    phone.addEventListener('input', function (event) {
+      cardPhone.innerHTML = phone.value;
+    });
+
 })()
