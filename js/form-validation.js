@@ -106,4 +106,7 @@
       cardCountry.innerHTML = country.value;
     });
 
+    cardCountry.innerHTML = country.value;
+    cardState.innerHTML = state.value + ', ';
+
 })()
