@@ -92,8 +92,14 @@
     var cardCountry = document.getElementById('cardCountry');
 
     country.addEventListener('change', function (event) {
-      if(country.value === 'none'){
-        return cardCountry.innerHTML = '';
+      if(country.value !== 'United States of America'){
+        state.setAttribute('disabled', 'disabled');
+        state.value = 'none';
+        cardState.innerHTML = '';
+      } else {
+        state.removeAttribute('disabled');
+        state.value = 'AL';
+        cardState.innerHTML = 'AL, ';
       }
       cardCountry.innerHTML = country.value;
     });
