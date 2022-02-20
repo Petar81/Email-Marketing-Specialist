@@ -77,7 +77,10 @@
                 <li class="list-group-item d-flex justify-content-between lh-sm">
                   <div>
                     <h6 class="my-0">Address</h6>
-                    <small class="text-muted">...</small>
+                    <small class="text-muted" id="cardStreet">...</small>
+                    <small class="text-muted" id="cardState"></small>
+                    <small class="text-muted" id="cardZIP"></small>
+                    <small class="text-muted" id="cardCountry"></small>
                   </div>
                 </li>
                 <li class="list-group-item d-flex justify-content-between lh-sm">
@@ -407,7 +410,8 @@
                   <div class="col-md-4">
                     <label for="state" class="form-label">State</label>
                     <select class="form-select" id="state" required>
-                      <option value="AL">Alabama</option>
+                      <option value="">none</option>
+                      <option selected value="AL">Alabama</option>
                       <option value="AK">Alaska</option>
                       <option value="AZ">Arizona</option>
                       <option value="AR">Arkansas</option>
