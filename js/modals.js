@@ -1,6 +1,7 @@
 
 var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
-  keyboard: false
+  keyboard: false,
+  backdrop: 'static'
   
 }); 
 
