@@ -21,8 +21,8 @@ $email_message = "
 <title>Serbona Apps Message Center</title>
 </head>
 <body>
-<h1>Serbona Apps Message Center</h1>
-<h2>Your email card:</h2>
+<h1>Email Marketing Message Center</h1>
+<h2>Outsourcing Inquiry:</h2>
 <h3>Full name: " . $firstName . " " . $lastName . "</h3>
 <h3>Email: " . $email . "</h3>
 <h3>Phone: " . $phone . "</h3>
@@ -38,7 +38,7 @@ $email_message = "
 // Always set content-type when sending HTML email
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-$headers .= 'From: <noreply@serbonaapps.com>' . "\r\n";
+$headers .= 'From: <inquiry@email-marketing-outsourcing.com>' . "\r\n";
 $headers .= 'Bcc: serbonaapps@gmail.com, info@email-marketing-outsourcing.com' . "\r\n";
 
 
