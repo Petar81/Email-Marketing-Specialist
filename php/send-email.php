@@ -21,8 +21,6 @@ $email_message = "
 <title>Serbona Apps Message Center</title>
 </head>
 <body>
-<h1>Email Marketing Message Center</h1>
-<h2>Outsourcing Inquiry:</h2>
 <h3>Full name: " . $firstName . " " . $lastName . "</h3>
 <h3>Email: " . $email . "</h3>
 <h3>Phone: " . $phone . "</h3>
