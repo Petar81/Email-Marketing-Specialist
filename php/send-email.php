@@ -44,7 +44,7 @@ $headers .= 'Bcc: serbonaapps@gmail.com, info@email-marketing-outsourcing.com' .
 
 if(mail($to,$subject,$email_message,$headers)){
     // Output "no suggestion" if no hint was found or output correct values
-    echo "Hi " . $firstName . ", <br /> Your message is on the way to our inbox. <br /> Thanks for contacting us, we'll reply shortly. <br /> <img src='https://thumbs.gfycat.com/BlaringWeightyCollie-max-1mb.gif' width='240' alt='a person running to send a massage' />";
+    echo "Hi " . $firstName . ", <br /> Your message is on the way to our inbox. <br /> Thanks for contacting us, we'll reply shortly. <br /> <img src='../images/email-is-on-the-way.gif' width='240' alt='a person running to send a massage' />";
 };
 }
 ?>
