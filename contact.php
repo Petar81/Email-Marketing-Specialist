@@ -103,11 +103,11 @@
             </div>
             </div>
             <div class="col-md-7 col-lg-8 mb-5">
-              <form class="needs-validation" novalidate>
+              <form method="post" action="" class="needs-validation" novalidate>
                 <div class="row g-3">
                   <div class="col-sm-6">
                     <label for="firstName" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Jane" value="" required>
+                    <input type="text" name="firstName" class="form-control" id="firstName" placeholder="Jane" value="" required>
                     <div class="invalid-feedback">
                       Valid first name is required.
                     </div>
@@ -115,7 +115,7 @@
       
                   <div class="col-sm-6">
                     <label for="lastName" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Smith" value="" required>
+                    <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Smith" value="" required>
                     <div class="invalid-feedback">
                       Valid last name is required.
                     </div>
@@ -125,7 +125,7 @@
                     <label for="company" class="form-label">Company</label>
                     <div class="input-group has-validation">
                       <span class="input-group-text">@</span>
-                      <input type="text" class="form-control" id="company" placeholder="Company name" value="" required>
+                      <input type="text" name="companyName" class="form-control" id="company" placeholder="Company name" value="" required>
                     <div class="invalid-feedback">
                         Your company name is required.
                       </div>
@@ -134,7 +134,7 @@
       
                   <div class="col-12">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com" value="" required>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="you@example.com" value="" required>
                     <div class="invalid-feedback">
                       Please enter a valid email address for shipping updates.
                     </div>
@@ -142,7 +142,7 @@
 
                   <div class="col-12">
                     <label for="phone" class="form-label">Phone</label>
-                    <input type="text" class="form-control" id="phone" placeholder="+1-224-345-0178" value="" required>
+                    <input type="text" name="phone" class="form-control" id="phone" placeholder="+1-224-345-0178" value="" required>
                     <div class="invalid-feedback">
                       Please enter a valid phone number.
                     </div>
@@ -150,7 +150,7 @@
       
                   <div class="col-12">
                     <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" value="" required>
+                    <input type="text" name="address" class="form-control" id="address" placeholder="1234 Main St" value="" required>
                     <div class="invalid-feedback">
                       Please enter your shipping address.
                     </div>
@@ -473,7 +473,7 @@
       
                   <div class="col-md-3">
                     <label for="zip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" value="" required>
+                    <input type="text" name="zip" class="form-control" id="zip" placeholder="" value="" required>
                     <div class="invalid-feedback">
                       Zip code required.
                     </div>
@@ -481,7 +481,7 @@
 
                   <div class="mb-3">
                     <label for="message" class="form-label">Your message</label>
-                    <textarea class="form-control" id="message" rows="7" placeholder="Type in your message here..." value="" required></textarea>
+                    <textarea class="form-control" name="message" id="message" rows="7" placeholder="Type in your message here..." value="" required></textarea>
                     <div class="invalid-feedback">
                       Message is required
                     </div>
