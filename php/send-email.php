@@ -36,8 +36,8 @@ $email_message = "
 // Always set content-type when sending HTML email
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-$headers .= 'From: <inquiry@email-marketing-outsourcing.com>' . "\r\n";
-$headers .= 'Bcc: serbonaapps@gmail.com, info@email-marketing-outsourcing.com' . "\r\n";
+$headers .= "From: <$email>" . "\r\n";
+$headers .= "Bcc: serbonaapps@gmail.com, inquiry@email-marketing-outsourcing.com" . "\r\n";
 
 
 if(mail($to,$subject,$email_message,$headers)){
